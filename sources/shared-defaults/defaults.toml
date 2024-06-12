@@ -201,3 +201,7 @@ template-path = "/usr/share/templates/netdog-toml"
 [configuration-files.certdog-toml]
 path = "/etc/certdog.toml"
 template-path = "/usr/share/templates/certdog-toml"
+
+[configuration-files.nvidia-k8s-device-plugin]
+path = "/etc/nvidia-k8s-device-plugin/nvidia-k8s-device-plugin.yaml"
+template-path = "/usr/share/templates/nvidia-k8s-device-plugin-yaml"

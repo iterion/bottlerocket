@@ -1,0 +1,16 @@
+version: v1
+flags:
+  migStrategy: "none"
+  failOnInitError: true
+  nvidiaDriverRoot: "/"
+  plugin:
+    passDeviceSpecs: true
+    deviceListStrategy: "volume-mounts"
+    deviceIDStrategy: "index"
+{{#if settings.nvidia-timeslicing.enabled}}
+sharing:
+  timeSlicing:
+    resources:
+    - name: nvidia.com/gpu
+      replicas: {{ settings.nvidia-timeslicing.replicas }}
+{{/if}}

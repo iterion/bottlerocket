@@ -24,4 +24,5 @@ struct AwsK8sSettings {
     dns: settings_extension_dns::DnsSettingsV1,
     container_runtime: settings_extension_container_runtime::ContainerRuntimeSettingsV1,
     autoscaling: settings_extension_autoscaling::AutoScalingSettingsV1,
+    nvidia_timeslicing: settings_extension_nvidia_timeslicing::NvidiaTimeslicingV1,
 }

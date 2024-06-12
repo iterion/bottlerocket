@@ -31,6 +31,7 @@ settings-extension-metrics = { path = "../../settings-extensions/metrics", versi
 settings-extension-motd = { path = "../../settings-extensions/motd", version = "0.1" }
 settings-extension-network = { path = "../../settings-extensions/network", version = "0.1" }
 settings-extension-ntp = { path = "../../settings-extensions/ntp", version = "0.1" }
+settings-extension-nvidia-timeslicing = { path = "../../settings-extensions/nvidia-timeslicing", version = "0.1" }
 settings-extension-oci-defaults = { path = "../../settings-extensions/oci-defaults", version = "0.1" }
 settings-extension-oci-hooks = { path = "../../settings-extensions/oci-hooks", version = "0.1" }
 settings-extension-pki = { path = "../../settings-extensions/pki", version = "0.1" }
