@@ -3924,6 +3924,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "settings-extension-nvidia-timeslicing"
+version = "0.1.0"
+dependencies = [
+ "bottlerocket-settings-sdk",
+ "env_logger",
+ "model-derive",
+ "modeled-types",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "settings-extension-oci-defaults"
 version = "0.1.0"
 dependencies = [
@@ -4084,6 +4096,7 @@ dependencies = [
  "settings-extension-motd",
  "settings-extension-network",
  "settings-extension-ntp",
+ "settings-extension-nvidia-timeslicing",
  "settings-extension-oci-defaults",
  "settings-extension-oci-hooks",
  "settings-extension-pki",

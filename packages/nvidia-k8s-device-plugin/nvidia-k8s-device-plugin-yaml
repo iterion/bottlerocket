@@ -1,3 +1,7 @@
+[required-extensions]
+nvidia-timeslicing = "v1"
+std = { version = "v1" }
++++
 version: v1
 flags:
   migStrategy: "none"

@@ -13,7 +13,7 @@ License: Apache-2.0
 URL: https://github.com/NVIDIA/k8s-device-plugin
 Source0: https://%{goimport}/archive/v%{gover}/v%{gover}.tar.gz#/k8s-device-plugin-%{gover}.tar.gz
 Source1: nvidia-k8s-device-plugin.service
-Source2: nvidia-k8s-device-plugin.yaml
+Source2: nvidia-k8s-device-plugin-yaml
 
 BuildRequires: %{_cross_os}glibc-devel
 Requires: %{name}(binaries)

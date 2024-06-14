@@ -202,6 +202,14 @@ template-path = "/usr/share/templates/netdog-toml"
 path = "/etc/certdog.toml"
 template-path = "/usr/share/templates/certdog-toml"
 
+
+[services.nvidia-k8s-device-plugin]
+configuration-files = ["nvidia-k8s-device-plugin"]
+restart-commands = ["/bin/systemctl try-reload-or-restart nvidia-k8s-device-plugin.service"]
+
+[metadata.settings.nvidia-timeslicing]
+affected-services = ["nvidia-k8s-device-plugin"]
+
 [configuration-files.nvidia-k8s-device-plugin]
-path = "/etc/nvidia-k8s-device-plugin/nvidia-k8s-device-plugin.yaml"
+path = "/etc/nvidia-k8s-device-plugin.yaml"
 template-path = "/usr/share/templates/nvidia-k8s-device-plugin-yaml"

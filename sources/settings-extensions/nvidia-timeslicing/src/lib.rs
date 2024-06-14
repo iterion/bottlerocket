@@ -50,8 +50,8 @@ mod test {
         assert_eq!(
             generated,
             GenerateResult::Complete(NvidiaTimeslicingV1 {
-                enabled: false,
-                replicas: 0,
+                enabled: None,
+                replicas: None,
             })
         )
     }
@@ -60,7 +60,7 @@ mod test {
     fn test_serde_nvidia_timeslicing() {
         let input_json = r#"{
             "enabled": true,
-            "replicas": 1,
+            "replicas": 1
         }"#;
 
         let timeslicing: NvidiaTimeslicingV1 = serde_json::from_str(input_json).unwrap();
@@ -68,8 +68,8 @@ mod test {
         assert_eq!(
             timeslicing,
             NvidiaTimeslicingV1 {
-                enabled: true,
-                replicas: 1,
+                enabled: Some(true),
+                replicas: Some(1),
             }
         );
     }

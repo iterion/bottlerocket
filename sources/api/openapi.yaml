@@ -134,6 +134,8 @@ components:
           properties:
             hostname:
               type: string
+        nvidia-timeslicing:
+          type: object
         kernel:
           type: object
           properties:

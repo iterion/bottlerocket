@@ -1,0 +1,3 @@
+[settings.nvidia-timeslicing]
+enabled = false
+replicas = 0
